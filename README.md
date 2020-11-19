@@ -1,4 +1,6 @@
-# roundabout
+# Roundabout
+# A Vue.js 2 project for final year advanved web development
+
 
 ## Project setup
 ```
