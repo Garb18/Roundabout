@@ -1,16 +1,24 @@
 <template>
   <v-app id="inspire">
-    <Toolbar />
+    <NavDrawer />
+    <TopNav />
+    <v-main>
+      <!-- Provides the application the proper gutter -->
+      <v-container fluid>
+        <router-view></router-view>
+      </v-container>
+    </v-main>
+    <BottomNav />
   </v-app>
 </template>
 
 <script>
-import Toolbar from "./components/Toolbar";
+import TopNav from "@/components/TopNav";
+import NavDrawer from "@/components/NavDrawer";
+import BottomNav from "@/components/BottomNav";
 
 export default {
-  name: "App",
-  components: {
-    Toolbar,
-  },
+  components: { NavDrawer, TopNav, BottomNav },
+  data: () => ({}),
 };
 </script>

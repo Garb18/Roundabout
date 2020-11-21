@@ -1,16 +1,15 @@
 <template>
-  <v-app>
-    <Navbar />
+  <div>
     <Boxcards />
-  </v-app>
+  </div>
 </template>
 
 <script>
-import Navbar from "@/components/Navbar";
 import Boxcards from "@/components/BoxCards";
+
 export default {
   name: "Toolbar",
-  components: { Navbar, Boxcards },
+  components: { Boxcards },
   data() {
     return {
       //
