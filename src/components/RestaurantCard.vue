@@ -49,7 +49,7 @@
     <v-card-text>
       <v-chip-group
         v-model="selection"
-        active-class="red darken-4 white--text"
+        active-class="primary white--text"
         column
       >
         <v-chip>5:30PM</v-chip>
@@ -66,7 +66,7 @@
       <v-btn color="white" text @click="reserve"> Reserve </v-btn>
     </v-card-actions>
     <v-card-actions>
-      <v-btn color="white" text> Explore </v-btn>
+      <v-btn color="white" text @click="show = !show"> Explore </v-btn>
 
       <v-spacer></v-spacer>
 

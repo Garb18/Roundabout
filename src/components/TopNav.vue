@@ -28,6 +28,7 @@
       prepend-inner-icon="mdi-magnify"
       class="expanding-search mt-1"
       dark
+      color="white"
       :class="{ closed: searchClosed && !search }"
       filled
       dense
@@ -37,7 +38,7 @@
 
     <!--Navigation Links-->
     <template v-slot:extension>
-      <v-tabs align-with-title dark>
+      <v-tabs align-with-title dark color="white">
         <v-tab to="/">Home</v-tab>
         <v-tab to="/about">About</v-tab>
         <v-tab>Tab 3</v-tab>

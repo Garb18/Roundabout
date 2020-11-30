@@ -5,6 +5,7 @@
     <v-main>
       <!-- Provides the application the proper gutter -->
       <v-container fluid>
+        <!-- Rendered views based on route taken-->
         <router-view></router-view>
       </v-container>
     </v-main>
