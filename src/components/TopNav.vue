@@ -3,18 +3,18 @@
     app
     short
     dense
-    color="red darken-4"
+    color="secondary white--text"
     shrink-on-scroll
     src="banner.jpg"
   >
     <template v-slot:img="{ props }">
       <v-img
         v-bind="props"
-        gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
+        gradient="to top right, rgba(220, 28, 19,.4), rgba(220, 28, 19,.1)"
       ></v-img>
     </template>
 
-    <v-app-bar-nav-icon @click="openDrawer()"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon @click="openDrawer()" dark></v-app-bar-nav-icon>
     <v-toolbar-title>Roundabout Reservation</v-toolbar-title>
 
     <v-spacer></v-spacer>
@@ -27,7 +27,7 @@
       placeholder="Search"
       prepend-inner-icon="mdi-magnify"
       class="expanding-search mt-1"
-      color="deep-purple"
+      dark
       :class="{ closed: searchClosed && !search }"
       filled
       dense
@@ -37,7 +37,7 @@
 
     <!--Navigation Links-->
     <template v-slot:extension>
-      <v-tabs align-with-title>
+      <v-tabs align-with-title dark>
         <v-tab to="/">Home</v-tab>
         <v-tab to="/about">About</v-tab>
         <v-tab>Tab 3</v-tab>

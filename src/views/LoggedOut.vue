@@ -1,8 +1,14 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col cols="12">
-        <v-sheet min-height="70vh" rounded="lg">
+  <v-container justfiy-center>
+    <v-row justfiy-center>
+      <v-col cols="12" justfiy-center>
+        <v-sheet
+          min-height="35vh"
+          width="35vw"
+          rounded="lg"
+          color="success"
+          justfiy-center
+        >
           <!--  -->
         </v-sheet>
       </v-col>

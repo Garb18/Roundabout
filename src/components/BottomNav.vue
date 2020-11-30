@@ -1,5 +1,5 @@
 <template>
-  <v-bottom-navigation :value="value" color="red darken-4" grow hide-on-scroll>
+  <v-bottom-navigation :value="value" color="primary" grow hide-on-scroll>
     <v-btn>
       <span>Recents</span>
 

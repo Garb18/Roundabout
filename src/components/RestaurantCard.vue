@@ -3,11 +3,11 @@
     :loading="loading"
     class="mx-auto"
     max-width="400"
-    color="brown darken-2 white--text"
+    color="secondary white--text"
   >
     <template slot="progress">
       <v-progress-linear
-        color="red darken-4"
+        color="primary"
         height="10"
         indeterminate
       ></v-progress-linear>
@@ -20,7 +20,7 @@
 
     <v-card-title>Cafe Badilico</v-card-title>
 
-    <v-card-text color="white">
+    <v-card-text>
       <v-row align="center" class="mx-0">
         <v-rating
           :value="4.5"
@@ -31,12 +31,12 @@
           size="14"
         ></v-rating>
 
-        <div class="grey--text ml-4">4.5 (413)</div>
+        <div class="ml-4 white--text">4.5 (413)</div>
       </v-row>
 
-      <div class="my-4 subtitle-1">$ • Italian, Cafe</div>
+      <div class="my-4 subtitle-1 white--text">$ • Italian, Cafe</div>
 
-      <div>
+      <div class="white--text">
         Small plates, salads & sandwiches - an intimate setting with 12 indoor
         seats plus patio seating.
       </div>
