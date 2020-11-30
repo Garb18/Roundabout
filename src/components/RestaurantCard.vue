@@ -1,8 +1,13 @@
 <template>
-  <v-card :loading="loading" class="mx-auto" max-width="400">
+  <v-card
+    :loading="loading"
+    class="mx-auto"
+    max-width="400"
+    color="brown darken-2 white--text"
+  >
     <template slot="progress">
       <v-progress-linear
-        color="deep-purple"
+        color="red darken-4"
         height="10"
         indeterminate
       ></v-progress-linear>
@@ -15,7 +20,7 @@
 
     <v-card-title>Cafe Badilico</v-card-title>
 
-    <v-card-text>
+    <v-card-text color="white">
       <v-row align="center" class="mx-0">
         <v-rating
           :value="4.5"
@@ -44,7 +49,7 @@
     <v-card-text>
       <v-chip-group
         v-model="selection"
-        active-class="deep-purple accent-4 white--text"
+        active-class="red darken-4 white--text"
         column
       >
         <v-chip>5:30PM</v-chip>
@@ -58,12 +63,10 @@
     </v-card-text>
 
     <v-card-actions>
-      <v-btn color="deep-purple lighten-2" text @click="reserve">
-        Reserve
-      </v-btn>
+      <v-btn color="white" text @click="reserve"> Reserve </v-btn>
     </v-card-actions>
     <v-card-actions>
-      <v-btn color="deep-purple lighten-2" text> Explore </v-btn>
+      <v-btn color="white" text> Explore </v-btn>
 
       <v-spacer></v-spacer>
 

@@ -13,7 +13,12 @@
     <v-divider></v-divider>
 
     <v-list>
-      <v-list-item v-for="item in items" :key="item.title" :to="item.to">
+      <v-list-item
+        v-for="item in items"
+        :key="item.title"
+        :to="item.to"
+        color="red darken-4"
+      >
         <v-list-item-icon>
           <v-icon>{{ item.icon }}</v-icon>
         </v-list-item-icon>

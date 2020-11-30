@@ -3,7 +3,7 @@
     app
     short
     dense
-    color="deep-purple"
+    color="red darken-4"
     shrink-on-scroll
     src="banner.jpg"
   >
