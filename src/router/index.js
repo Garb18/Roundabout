@@ -19,7 +19,17 @@ const routes = [
     path: '/loggedout',
     name: 'LoggedOut',
     component: () => import(/* webpackChunkName: "loggedout" */ "@/views/LoggedOut.vue")
-  }
+  },
+  {
+    path: '/orderhistory',
+    name: 'OrderHistory',
+    component: () => import(/* webpackChunkName: "OrderHistory" */ "@/views/OrderHistory.vue")
+  },
+  {
+    path: '/favourites',
+    name: 'Favourites',
+    component: () => import(/* webpackChunkName: "Favourites" */ "@/views/Favourites.vue")
+  },
 ]
 
 const router = new VueRouter({

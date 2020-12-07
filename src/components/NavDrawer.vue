@@ -43,7 +43,21 @@ export default {
   name: "NavDrawer",
   data: () => ({
     items: [
-      { title: "Booking History", icon: "mdi-food-variant", to: "/" },
+      {
+        title: "Home",
+        icon: "mdi-home",
+        to: "/",
+      },
+      {
+        title: "About us",
+        icon: "mdi-account-group",
+        to: "/about",
+      },
+      {
+        title: "Booking History",
+        icon: "mdi-food-variant",
+        to: "/orderhistory",
+      },
       { title: "Log Out", icon: "mdi-power-settings", to: "/loggedout" },
     ],
     drawer: null,

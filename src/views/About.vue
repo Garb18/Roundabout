@@ -1,17 +1,17 @@
 <template>
   <div class="about">
-    <Toolbar />
+    <AboutCard />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Toolbar from "@/components/Toolbar";
+import AboutCard from "@/components/AboutCard";
 
 export default {
   name: "about",
   components: {
-    Toolbar,
+    AboutCard,
   },
 };
 </script>

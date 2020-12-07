@@ -11,6 +11,7 @@ export default new Vuetify({
           light: {
             primary: "#f05545",
             secondary: '#8b6b61',
+            card: '#eeeeee'
           },
           dark: {
               primary:"#7f0000",

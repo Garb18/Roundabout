@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <NavDrawer />
     <TopNav />
-    <v-main>
+    <v-main color="background">
       <!-- Provides the application the proper gutter -->
       <v-container fluid>
         <!-- Rendered views based on route taken-->

@@ -1,23 +1,13 @@
 <template>
-  <v-container justfiy-center>
-    <v-row justfiy-center>
-      <v-col cols="12" justfiy-center>
-        <v-sheet
-          min-height="35vh"
-          width="35vw"
-          rounded="lg"
-          color="success"
-          justfiy-center
-        >
-          <!--  -->
-        </v-sheet>
-      </v-col>
-    </v-row>
-  </v-container>
+  <LoggedOutCard />
 </template>
 
 <script>
+// @ is an alias to /src
+import LoggedOutCard from "@/components/LoggedOutCard";
+
 export default {
   name: "LoggedOut",
+  components: { LoggedOutCard },
 };
 </script>

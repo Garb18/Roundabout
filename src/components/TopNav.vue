@@ -1,8 +1,6 @@
 <template>
   <v-app-bar
     app
-    short
-    dense
     color="secondary white--text"
     shrink-on-scroll
     src="banner.jpg"
@@ -37,13 +35,13 @@
     <!--End of search field-->
 
     <!--Navigation Links-->
-    <template v-slot:extension>
+    <!-- <template v-slot:extension>
       <v-tabs align-with-title dark color="white">
         <v-tab to="/">Home</v-tab>
         <v-tab to="/about">About</v-tab>
         <v-tab>Tab 3</v-tab>
       </v-tabs>
-    </template>
+    </template> -->
     <!--End Of Navigation Links-->
   </v-app-bar>
 </template>
