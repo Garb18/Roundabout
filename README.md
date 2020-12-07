@@ -1,5 +1,5 @@
 # Roundabout
-# A Vue.js 2 project for final year advanved web development
+# A Vue.js 2 project for final year advanced web development
 
 
 ## Project setup
