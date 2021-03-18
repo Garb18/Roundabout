@@ -4,6 +4,21 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
+const guest = (to, from, next) => {
+  if (!localStorage.getItem("authToken")) {
+    return next();
+  } else {
+    return next("/");
+  }
+};
+const auth = (to, from, next) => {
+  if (localStorage.getItem("authToken")) {
+    return next();
+  } else {
+    return next("/login");
+  }
+};
+
 const routes = [
   {
     path: '/',
@@ -18,11 +33,13 @@ const routes = [
   {
     path: '/loggedout',
     name: 'LoggedOut',
+    beforeEnter: guest,
     component: () => import(/* webpackChunkName: "loggedout" */ "@/views/LoggedOut.vue")
   },
   {
     path: '/orderhistory',
     name: 'OrderHistory',
+    beforeEnter: auth,
     component: () => import(/* webpackChunkName: "OrderHistory" */ "@/views/OrderHistory.vue")
   },
   {
